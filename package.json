@@ -1,0 +1,28 @@
+{
+  "name": "sevafile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startr": "node index.js",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artpani4/taskFileSeva.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artpani4/taskFileSeva/issues"
+  },
+  "homepage": "https://github.com/artpani4/taskFileSeva#readme",
+  "devDependencies": {
+    "@types/node": "^18.8.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
