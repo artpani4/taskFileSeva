@@ -8,8 +8,8 @@ const openFileConsole = async () =>{
     const fileName = prompt()
     try{
         console.log(path.resolve(__dirname, "../", fileName))
-        const firstFile = await fsp.readFile(path.resolve(__dirname, "../", fileName), {encoding:"UTF-8"})
-        const data = await fsp.readFile(path.resolve(__dirname, "../", firstFile),{encoding:"UTF-8"})
+        const firstFile = await fsp.readFile(_rootifyPath(fileName), {encoding:"UTF-8"})
+        const data = await fsp.readFile(_rootifyPath(firstFile),{encoding:"UTF-8"})
         return data
     }
     catch (err){
@@ -18,7 +18,7 @@ const openFileConsole = async () =>{
 }
 
 const _rootifyPath = pathName=>{
-    return path.resolve("../",pathName)
+    return path.resolve(__dirname, "../", pathName)
 }
 
 module.exports = openFileConsole
