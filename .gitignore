@@ -2,5 +2,5 @@
 .vs
 .vscode
 .keystone
-.txt
+*.txt
 node_modules
